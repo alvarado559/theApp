@@ -2,7 +2,7 @@
 import React from 'react';
 import { TabNavigator } from 'react-navigation';
 import {
-  Button
+  Icon
 } from 'react-native-elements'
 
 import App from '../screens/App';
@@ -15,10 +15,10 @@ import Laws from '../screens/Laws';
 export const Tabs = TabNavigator({
   Menu: {
     screen:Menu,
-  //  navigationOptions: {
-      //tabBarLabel: 'Menu',
-      //tabBarIcon:({ tintColor }) => <Icon name="list" size={35} color={tintColor} />
-
+    navigationOptions: {
+      tabBarLabel: 'Menu',
+      tabBarIcon:({ tintColor }) => <Icon name="list" size={35} color={tintColor} />
+    },
   },
   News:{
     screen:News,

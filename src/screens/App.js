@@ -24,6 +24,7 @@ import {
 import styled from 'styled-components/native';
 import {TabNavigator} from 'react-navigation';
 import { Tabs } from '../config/router';
+//import { Icon } from 'react-native-elements';
 
 
 

@@ -1,7 +1,9 @@
 
 import React from 'react';
 import { TabNavigator } from 'react-navigation';
-//import { Icon } from 'react-native-elements';
+import {
+  Button
+} from 'react-native-elements'
 
 import App from '../screens/App';
 import Menu from '../screens/Menu';
@@ -13,6 +15,10 @@ import Laws from '../screens/Laws';
 export const Tabs = TabNavigator({
   Menu: {
     screen:Menu,
+  //  navigationOptions: {
+      //tabBarLabel: 'Menu',
+      //tabBarIcon:({ tintColor }) => <Icon name="list" size={35} color={tintColor} />
+
   },
   News:{
     screen:News,

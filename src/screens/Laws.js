@@ -43,7 +43,7 @@ export default class Laws extends Component {
     return (
       <Container>
         <TextStyled>
-          Welcome to your local dispensary!
+          Stay up to date with local and state laws!
         </TextStyled>
       </Container>
 

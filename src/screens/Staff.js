@@ -39,7 +39,7 @@ export default class Staff extends Component {
     return (
       <Container>
         <TextStyled>
-          Welcome to your local dispensary!
+          Meet our staff!
         </TextStyled>
       </Container>
 

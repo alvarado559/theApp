@@ -39,7 +39,7 @@ export default class Events extends Component{
     return (
       <Container>
         <TextStyled>
-          Welcome to your local dispensary!
+          This our events section!
         </TextStyled>
       </Container>
 

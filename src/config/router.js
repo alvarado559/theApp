@@ -3,15 +3,27 @@ import React from 'react';
 import { TabNavigator } from 'react-navigation';
 //import { Icon } from 'react-native-elements';
 
-//import App from './screens/App';
-//import Menu from './screens/Menu';
-/**
+import App from '../screens/App';
+import Menu from '../screens/Menu';
+import News from '../screens/News';
+import Staff from '../screens/Staff';
+import Events from '../screens/Events';
+import Laws from '../screens/Laws';
+
 export const Tabs = TabNavigator({
-  Home: {
-    screen:  App
-  },
   Menu: {
-    screen: Menu
+    screen:Menu,
+  },
+  News:{
+    screen:News,
+  },
+  Staff:{
+    screen:Staff,
+  },
+  Events:{
+    screen:Events,
+  },
+  Laws:{
+    screen:Laws,
   }
 });
-*/

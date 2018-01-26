@@ -39,7 +39,7 @@ export default class News extends Component {
     return (
       <Container>
         <TextStyled>
-          Welcome to your local dispensary!
+          Welcome to the news section!
         </TextStyled>
       </Container>
 

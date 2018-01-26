@@ -10,6 +10,7 @@ import Events from './Events';
 import Laws from './Laws';
 import Menu from './Menu';
 
+
 //import { Tabs } from './config/router';
 
 import React, { Component } from 'react';
@@ -50,12 +51,7 @@ margin: 10px;
 export default class App extends Component {
   render() {
     return (
-      <Container>
-        <TextStyled>
-          Welcome to your local dispensary!
-        </TextStyled>
-      </Container>
-
+        <Tabs/>
     );
   }
 }

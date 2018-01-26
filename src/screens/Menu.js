@@ -39,7 +39,7 @@ export default class Menu extends Component {
     return (
       <Container>
         <TextStyled>
-          Welcome to your local dispensary!
+          Welcome to our menu!
         </TextStyled>
       </Container>
 

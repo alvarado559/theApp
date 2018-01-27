@@ -24,28 +24,28 @@ export const Tabs = TabNavigator({
     screen:News,
     navigationOptions: {
       tabBarLabel: 'News',
-      tabBarIcon:({ tintColor }) => <Icon  name='feedback' color='#517fa4' />
+      tabBarIcon:({ tintColor }) => <Icon  name='feedback' color={tintColor} />
     },
   },
   Staff:{
     screen:Staff,
     navigationOptions: {
       tabBarLabel: 'Staff',
-      tabBarIcon:({ tintColor }) => <Icon  name='people' color='#517fa4' />
+      tabBarIcon:({ tintColor }) => <Icon  name='people' color={tintColor} />
     },
   },
   Events:{
     screen:Events,
     navigationOptions: {
       tabBarLabel: 'Events',
-      tabBarIcon:({ tintColor }) => <Icon  name='assignment' color='#517fa4' />
+      tabBarIcon:({ tintColor }) => <Icon  name='assignment' color={tintColor} />
     },
   },
   Laws:{
     screen:Laws,
     navigationOptions: {
       tabBarLabel: 'Laws',
-      tabBarIcon:({ tintColor }) => <Icon  name='visibility' color='#517fa4' />
+      tabBarIcon:({ tintColor }) => <Icon  name='visibility' color={tintColor} />
     },
   }
 });

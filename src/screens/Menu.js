@@ -11,8 +11,11 @@ import {
   Text,
   View,
   AppRegistry,
+  ScrollView,
 } from 'react-native';
 import styled from 'styled-components/native';
+import { List, ListItem } from 'react-native-elements'
+//import {Button} from 'react-native-elements';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -35,14 +38,21 @@ margin: 10px;
 
 
 export default class Menu extends Component {
-  render() {
+  render(){
     return (
-      <Container>
-        <TextStyled>
-          Welcome to our menu!
-        </TextStyled>
-      </Container>
+      <ScrollView>
+        <List>
+          <ListItem
+            title='row-1'
+          />
+          <ListItem
+            title='row-2'
+          />
+        </List>
+
+      </ScrollView>
 
     );
   }
+
 }

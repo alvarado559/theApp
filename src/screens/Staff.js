@@ -13,6 +13,7 @@ import {
   AppRegistry,
 } from 'react-native';
 import styled from 'styled-components/native';
+import EmployeeFeature from '../components/EmployeeFeature.js';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -22,9 +23,7 @@ const instructions = Platform.select({
 });
 
 const Container = styled.View`
-justifyContent: center;
-alignItems: center;
-margin: 300px;
+flex:1;
 `;
 
 const TextStyled = styled.Text`
@@ -37,10 +36,9 @@ margin: 10px;
 export default class Staff extends Component {
   render() {
     return (
+
       <Container>
-        <TextStyled>
-          Meet our staff!
-        </TextStyled>
+        <EmployeeFeature/>
       </Container>
 
     );

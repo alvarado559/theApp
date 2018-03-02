@@ -9,10 +9,6 @@ import Staff from './Staff';
 import Events from './Events';
 import Laws from './Laws';
 import Menu from './Menu';
-
-
-//import { Tabs } from './config/router';
-
 import React, { Component } from 'react';
 import {
   Platform,
@@ -24,9 +20,6 @@ import {
 import styled from 'styled-components/native';
 import {TabNavigator} from 'react-navigation';
 import { Tabs } from '../config/router';
-//import { Icon } from 'react-native-elements';
-
-
 
 
 const instructions = Platform.select({

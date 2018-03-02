@@ -6,6 +6,7 @@
 
 import React, { Component } from 'react';
 import {
+  Alert,
   Platform,
   StyleSheet,
   Text,
@@ -13,18 +14,13 @@ import {
   AppRegistry,
 } from 'react-native';
 import styled from 'styled-components/native';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import {Button} from 'react-native-elements';
 
 const Container = styled.View`
+flex:1;
 justifyContent: center;
 alignItems: center;
-margin: 300px;
+flexDirection: column;
 `;
 
 const TextStyled = styled.Text`
@@ -35,13 +31,27 @@ margin: 10px;
 
 
 export default class News extends Component {
+
+  _onPressButton(){
+    Alert.alert('You tapped the button')
+  }
+
   render() {
     return (
       <Container>
         <TextStyled>
           Welcome to the news section!
         </TextStyled>
+        <Button
+          icon={{name: 'home', size: 32}}
+          buttonStyle={{backgroundColor: '#ff4f00', borderRadius: 10}}
+          textStyle={{textAlign: 'center'}}
+          title={`Welcome to\nReact Native Elements`}
+          onPress={this._onPressButton}
+        />
+
       </Container>
+
 
     );
   }

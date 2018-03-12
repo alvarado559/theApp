@@ -15,12 +15,11 @@ const users =
  background-color: #507cc4;
  `;
 
-export default class Counter extends Component {
+export default class EmployeeFeature extends Component {
 
   render(){
     return(
       //okay design the card
-      <Container>
       <Card
         title='Featured Staff Member'
         image={require('../images/felix.jpg')}
@@ -36,7 +35,6 @@ export default class Counter extends Component {
             title='VIEW NOW' />
 
       </Card>
-      </Container>
     );
   }
 

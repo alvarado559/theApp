@@ -11,9 +11,16 @@ import {
   Text,
   View,
   AppRegistry,
+  ScrollView,
 } from 'react-native';
 import styled from 'styled-components/native';
 import EmployeeFeature from '../components/EmployeeFeature.js';
+import {users} from '../config/data'
+import { List, ListItem } from 'react-native-elements'
+import EmployeeList from '../components/EmployeeList.js';
+import AppHeader from '../components/Header.js';
+
+var data = require("../config/data");
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -34,12 +41,20 @@ margin: 10px;
 
 
 export default class Staff extends Component {
+
+  onLearnMore = (user) => {
+    this.props.navigation.navigate('Details', { ...user });
+  };
+
   render() {
     return (
-
+    <ScrollView>
+      <AppHeader/>
       <Container>
         <EmployeeFeature/>
+        <EmployeeList/>
       </Container>
+    </ScrollView>
 
     );
   }
